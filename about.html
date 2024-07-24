@@ -5,14 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>about</title>
-    <script type="module" crossorigin src="/ViteTest0724/assets/main-75cc40c0.js"></script>
-    <link rel="stylesheet" href="/ViteTest0724/assets/main-a737ae3b.css">
+    <script type="module" crossorigin src="/ViteTest0724/assets/main-cc47fa03.js"></script>
+    <link rel="stylesheet" href="/ViteTest0724/assets/main-6f7a6f86.css">
   </head>
   <body>
     <h1 class="header">我是 header</h1>
 <a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>    <h1>我是about</h1>
+<a href="about.html">關於Vite & GitHub使用步驟</a>
+<a href="contact.html">contact</a>    <h1>關於Vite & GitHub使用步驟</h1>
+
+    <div>
+      <ul>
+        <li>要注意vite.config.js裡面有個repo的name要與GitHub網站的Repo名字相同</li>
+        <li>最一開始是 npm install 安裝</li>
+        <li class="fs-bold bgyellow">然後 npm run dev 是跑起來環境，會開一個瀏覽器，會進入vite模式下，這時候可以做修改跟即時看結果</li>
+        <li>都做完了ctrl+c離開Vite模式</li>
+        <li>然後執行git的指令 (main:主要開發分支環境)
+          <ol>
+            <li>git init</li>
+            <li>git add .</li>
+            <li>git commit -m "備註說明等等"</li>
+            <li>git remote add origin \[GitHub Repositories Url]\ <span class="textblue">例如 https://github.com/Josietaknow/ViteTest0724.git</span></li>
+            <li>git branch -M main</li>
+            <li>git push -u origin main</li>
+          </ol>
+        </li>
+        <li>最終要把結果發布到gh-pages就是執行 npm run deploy</li>
+        <li>之後如果還有再繼續更新等等，就執行
+          <ol>
+            <li class="fs-bold bgyellow">git add .</li>
+            <li class="fs-bold bgyellow">git commit -m "備註說明等等"</li>
+            <li class="fs-bold bgyellow">git push</li>
+          </ol>
+        </li>
+        <li class="fs-bold bgyellow">但是也是要記得同時npm run deploy</li>
+
+        <li>之後在打開VS code要注意黃底的要再做一次</li>
+      </ul>
+      
+
+    </div>
     <footer class="footer">我是 footer</footer>
     
   </body>
